@@ -19,7 +19,10 @@ gem 'jquery-ui-rails'
 # always possible on all platforms
 # Alternatively use --without <group> arguments to bundler to not install that group
 gem "sqlite3", group: :sqlite
-gem "mysql2", "~> 0.3.17", group: :mysql
+gem 'pg', '~> 0.15'
+
+
+gem 'activerecord-postgis-adapter', '~> 3.1', '>= 3.1.4'
 
 gem "RedCloth"
 gem "sanitize", ">=3.0.0"
