@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.2.6'
+gem 'rails', '~> 4.2.8'
 gem 'sass-rails', '~> 5.0'
 gem 'coffee-rails', '~> 4.1.0'
 
-gem 'json'
+# gem 'json'
 
 # todo: remove xml api
 gem 'actionpack-xml_parser', '>=1.0.1'
