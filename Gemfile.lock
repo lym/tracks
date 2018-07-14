@@ -297,6 +297,7 @@ DEPENDENCIES
   htmlentities
   jquery-rails
   jquery-ui-rails
+  json
   minitest-stub-const
   mocha
   paperclip
