@@ -2,16 +2,16 @@ language: ruby
 sudo: false
 cache: bundler
 
+services:
+  - postgresql
+
 rvm:
- - 2.0
- - 2.1
- - 2.2
+  - 2.0
+  - 2.1
+  - 2.2
 
 addons:
   firefox: 45.8.0esr
-
-env:
-  - DATABASE_URL=postgis://tracks:trackspas5@localhost:tracks_test
 
 bundler_args: --without development --jobs=3 --retry=3
 
