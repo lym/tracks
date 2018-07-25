@@ -12,6 +12,15 @@ rvm:
 
 addons:
   firefox: 45.8.0esr
+  postgresql: "10"
+  apt:
+    packages:
+    - postgresql-10
+    - postgresql-client-10
+
+env:
+  global:
+  - PGPORT=5433
 
 bundler_args: --without development --jobs=3 --retry=3
 
