@@ -11,7 +11,7 @@
 * Contributors: https://github.com/TracksApp/tracks/wiki/Contributors
 * Version: 2.4devel
 
-[![Build Status](https://travis-ci.org/TracksApp/tracks.svg?branch=master)](https://travis-ci.org/TracksApp/tracks)
+[![Build Status](https://travis-ci.org/lym/tracks.svg?branch=master)](https://travis-ci.org/lym/tracks)
 [![Code Climate](https://codeclimate.com/github/TracksApp/tracks/badges/gpa.svg)](https://codeclimate.com/github/TracksApp/tracks)
 [![Dependency Status](https://gemnasium.com/TracksApp/tracks.svg)](https://gemnasium.com/TracksApp/tracks)
 
