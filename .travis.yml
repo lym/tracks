@@ -23,7 +23,7 @@ before_script:
   - sh -e /etc/init.d/xvfb start
 
 script:
-  - "if [[ $DATABASE_URL == postgis* ]]; then bundle exec rake ci:full; else bundle exec rake ci:lite; fi"
+  - bundle exec rake ci:full
 
 notifications:
   email: false
