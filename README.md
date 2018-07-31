@@ -1,15 +1,4 @@
-# Tracks: a GTD(TM) web application, built with Ruby on Rails
-
-* Project homepage: http://www.getontracks.org/
-* Manual: http://www.getontracks.org/manual/
-* Source at GitHub: https://github.com/TracksApp/tracks
-* Bug reports and feature requests: https://github.com/TracksApp/tracks/issues
-* Wiki (community contributed information): https://github.com/TracksApp/tracks/wiki
-* Mailing list: http://groups.google.com/group/TracksApp
-* IRC channel: #tracks on Freenode
-* Original developer: bsag (http://www.rousette.org.uk/)
-* Contributors: https://github.com/TracksApp/tracks/wiki/Contributors
-* Version: 2.4devel
+# Tracks: Accomplish things sanely
 
 [![Build Status](https://travis-ci.org/lym/tracks.svg?branch=master)](https://travis-ci.org/lym/tracks)
 [![Code Climate](https://codeclimate.com/github/TracksApp/tracks/badges/gpa.svg)](https://codeclimate.com/github/TracksApp/tracks)
