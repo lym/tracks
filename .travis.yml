@@ -12,6 +12,7 @@ rvm:
 
 addons:
   firefox: 45.8.0esr
+  chrome: stable
   postgresql: "10"
   apt:
     packages:
@@ -20,8 +21,17 @@ addons:
     - postgresql-10-postgis-2.4
     - postgresql-10-postgis-2.4-scripts
 
+install: # Install ChromeDriver (64bits)
+  - wget -N http://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip -P ~/
+  - unzip ~/chromedriver_linux64.zip -d ~/
+  - rm ~/chromedriver_linux64.zip
+  - sudo mv -f ~/chromedriver /usr/local/share/
+  - sudo chmod +x /usr/local/share/chromedriver
+  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+
 env:
   global:
+  - JS_DRIVER="headless_chrome"
   - PGPORT=5433
   - TRACKS_APP_USER=travis
 
