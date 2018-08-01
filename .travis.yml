@@ -20,14 +20,7 @@ addons:
     - postgresql-client-10
     - postgresql-10-postgis-2.4
     - postgresql-10-postgis-2.4-scripts
-
-install: # Install ChromeDriver (64bits)
-  - wget -N http://chromedriver.storage.googleapis.com/2.30/chromedriver_linux64.zip -P ~/
-  - unzip ~/chromedriver_linux64.zip -d ~/
-  - rm ~/chromedriver_linux64.zip
-  - sudo mv -f ~/chromedriver /usr/local/share/
-  - sudo chmod +x /usr/local/share/chromedriver
-  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+    - chromium-chromedriver
 
 env:
   global:
@@ -38,6 +31,7 @@ env:
 bundler_args: --without development --jobs=3 --retry=3
 
 before_script:
+  - sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
   - psql -c "CREATE EXTENSION postgis;" -U travis
   - psql -c "CREATE DATABASE tracks_test;" -U travis
   - export DISPLAY=:99.0
