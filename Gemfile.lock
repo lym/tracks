@@ -83,8 +83,12 @@ GEM
       activesupport (>= 3.0)
     cocaine (0.5.7)
       climate_control (>= 0.0.3, < 1.0)
-    codeclimate-test-reporter (0.4.1)
-      simplecov (>= 0.7.1, < 1.0.0)
+    codeclimate-test-reporter (1.0.8)
+      simplecov (<= 0.13)
+    codecov (0.1.10)
+      json
+      simplecov
+      url
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -266,6 +270,7 @@ GEM
       json (>= 1.8.0)
     unicode-display_width (1.4.0)
     uniform_notifier (1.6.2)
+    url (0.3.2)
     websocket (1.2.4)
     will_paginate (3.0.7)
     xpath (2.0.0)
@@ -287,6 +292,7 @@ DEPENDENCIES
   bullet
   capybara
   codeclimate-test-reporter
+  codecov (~> 0.1.10)
   coffee-rails (~> 4.1.0)
   cucumber-rails
   database_cleaner

@@ -15,12 +15,15 @@ namespace :ci do
     puts 'Running full test suite'
 
     # test coverage from codeclimate
-    require "codeclimate-test-reporter"
-    CodeClimate::TestReporter.start
+    # require "codeclimate-test-reporter"
+    # CodeClimate::TestReporter.start
 
     # local test coverage
     require 'simplecov'
+    require 'codecov'
+
     SimpleCov.start 'rails'
+    SimpleCov.formatter = SimpleCov::Formatter::Codecov
 
     ['ci:lite', 'cucumber'].each do |t|
       Rake::Task[t].invoke

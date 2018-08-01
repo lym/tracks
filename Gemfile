@@ -90,4 +90,5 @@ group :test do
   gem "simplecov"
   # get test coverage info on codeclimate
   gem "codeclimate-test-reporter", group: :test, require: nil
+  gem 'codecov', '~> 0.1.10'
 end
