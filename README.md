@@ -1,6 +1,7 @@
 # Tracks: Accomplish things sanely
 
 [![Build Status](https://travis-ci.org/lym/tracks.svg?branch=master)](https://travis-ci.org/lym/tracks)
+[![code Coverage](https://codecov.io/gh/lym/tracks/branch/master/graph/badge.svg)](https://codecov.io/gh/lym/tracks)
 [![Code Climate](https://codeclimate.com/github/TracksApp/tracks/badges/gpa.svg)](https://codeclimate.com/github/TracksApp/tracks)
 [![Dependency Status](https://gemnasium.com/TracksApp/tracks.svg)](https://gemnasium.com/TracksApp/tracks)
 
