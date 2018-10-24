@@ -2,8 +2,7 @@
 
 [![Build Status](https://travis-ci.org/lym/tracks.svg?branch=master)](https://travis-ci.org/lym/tracks)
 [![code Coverage](https://codecov.io/gh/lym/tracks/branch/master/graph/badge.svg)](https://codecov.io/gh/lym/tracks)
-[![Code Climate](https://codeclimate.com/github/TracksApp/tracks/badges/gpa.svg)](https://codeclimate.com/github/TracksApp/tracks)
-[![Dependency Status](https://gemnasium.com/TracksApp/tracks.svg)](https://gemnasium.com/TracksApp/tracks)
+[![Maintainability](https://api.codeclimate.com/v1/badges/47f2c15b4ed35176e02a/maintainability)](https://codeclimate.com/github/lym/tracks/maintainability)
 
 Full instructions for both new installations and upgrades from older installations of Tracks
 can be found within the /doc directory.
