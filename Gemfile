@@ -47,6 +47,7 @@ gem "bootstrap-sass", "3.3.3"
 gem "font-awesome-sass", "~> 4.5.0"
 
 group :development do
+  gem "haml-rails", "~> 1.0"
   gem "spring"
   gem "spring-commands-cucumber"
   gem "yard"
