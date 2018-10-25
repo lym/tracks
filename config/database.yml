@@ -1,9 +1,7 @@
 development:
   adapter: postgis
   database: tracks
-  # set this if you are storing utf8 in your mysql database to handle strings
-  # like "Réné". Not needed for sqlite. For PostgreSQL use encoding: unicode
-  # encoding: utf8
+  encoding: unicode
   host: localhost
   username: <%= ENV['TRACKS_APP_USER'] %>
   password:
@@ -19,13 +17,6 @@ production:
   password:
 
 # The following is an example to configure Tracks to use sqlite
-
-#production:
-#  adapter: sqlite3
-#  database: db/tracks-20-blank.sqlite3.db
-#  pool: 5
-#  timeout: 5000
-
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
