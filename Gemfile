@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '~> 4.2.8'
-gem 'sass-rails', '~> 5.0'
+# gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'coffee-rails', '~> 4.1.0'
 
 # gem 'json'
@@ -18,14 +19,15 @@ gem 'jquery-ui-rails'
 # This will prevent a native build of the driver. Building native drivers is not
 # always possible on all platforms
 # Alternatively use --without <group> arguments to bundler to not install that group
-gem 'pg', '~> 0.15'
+gem 'pg', '0.20' # Lock to this version to avoid deprecation warnings
 
 
 gem 'activerecord-postgis-adapter', '~> 3.1', '>= 3.1.4'
 
 gem "RedCloth"
 gem "sanitize", ">=3.0.0"
-gem "will_paginate"
+# gem "will_paginate"
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem "acts_as_list"
 gem "aasm"
 gem "htmlentities"
@@ -69,7 +71,8 @@ group :test do
   gem 'rails-dom-testing', '~> 1.0', '>= 1.0.5'
 
   gem "factory_girl_rails"
-  gem "capybara"
+  # gem "capybara"
+  gem 'capybara', '~> 2.18'
   gem "cucumber-rails", :require => false
   gem "rspec-expectations"
   gem "database_cleaner"

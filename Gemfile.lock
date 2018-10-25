@@ -44,6 +44,8 @@ GEM
       tzinfo (~> 1.1)
     acts_as_list (0.7.2)
       activerecord (>= 3.0)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
     arel (6.0.4)
     aruba (0.6.1)
       childprocess (>= 0.3.6)
@@ -61,12 +63,13 @@ GEM
     bullet (4.14.0)
       activesupport (>= 3.0.0)
       uniform_notifier (>= 1.6.0)
-    capybara (2.4.4)
-      mime-types (>= 1.16)
+    capybara (2.18.0)
+      addressable
+      mini_mime (>= 0.1.3)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
-      xpath (~> 2.0)
+      xpath (>= 2.0, < 4.0)
     childprocess (0.6.2)
       ffi (~> 1.0, >= 1.0.11)
     climate_control (0.0.3)
@@ -150,15 +153,15 @@ GEM
     mime-types (2.99.3)
     mimemagic (0.3.0)
     mini_mime (1.0.0)
-    mini_portile2 (2.1.0)
+    mini_portile2 (2.3.0)
     minitest (5.11.3)
     minitest-stub-const (0.5)
     mocha (1.1.0)
       metaclass (~> 0.0.1)
     multi_json (1.11.2)
     multi_test (0.1.1)
-    nokogiri (1.6.8.1)
-      mini_portile2 (~> 2.1.0)
+    nokogiri (1.8.5)
+      mini_portile2 (~> 2.3.0)
     nokogumbo (1.1.12)
       nokogiri
     paperclip (4.3.0)
@@ -170,12 +173,13 @@ GEM
     parallel (1.12.1)
     parser (2.5.1.2)
       ast (~> 2.4.0)
-    pg (0.21.0)
+    pg (0.20.0)
     powerpack (0.1.2)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    public_suffix (3.0.3)
     puma (3.11.4)
     rack (1.6.10)
     rack-dev-mark (0.7.3)
@@ -238,8 +242,8 @@ GEM
       nokogiri (>= 1.4.4)
       nokogumbo (= 1.1.12)
     sass (3.4.22)
-    sass-rails (5.0.4)
-      railties (>= 4.0.0, < 5.0)
+    sass-rails (5.0.7)
+      railties (>= 4.0.0, < 6)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
@@ -284,9 +288,9 @@ GEM
     uniform_notifier (1.6.2)
     url (0.3.2)
     websocket (1.2.4)
-    will_paginate (3.0.7)
-    xpath (2.0.0)
-      nokogiri (~> 1.3)
+    will_paginate (3.1.6)
+    xpath (3.2.0)
+      nokogiri (~> 1.8)
     yard (0.8.7.6)
 
 PLATFORMS
@@ -302,7 +306,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootstrap-sass (= 3.3.3)
   bullet
-  capybara
+  capybara (~> 2.18)
   codeclimate-test-reporter
   codecov (~> 0.1.10)
   coffee-rails (~> 4.1.0)
@@ -317,7 +321,7 @@ DEPENDENCIES
   minitest-stub-const
   mocha
   paperclip
-  pg (~> 0.15)
+  pg (= 0.20)
   pry
   puma
   rack-dev-mark
@@ -328,7 +332,7 @@ DEPENDENCIES
   rspec-expectations
   rubocop (>= 0.47)
   sanitize (>= 3.0.0)
-  sass-rails (~> 5.0)
+  sass-rails (~> 5.0, >= 5.0.7)
   selenium-webdriver (~> 2.53)
   simplecov
   spring
@@ -336,7 +340,7 @@ DEPENDENCIES
   swf_fu
   tolk (~> 1.9.3)
   uglifier (>= 1.3.0)
-  will_paginate
+  will_paginate (~> 3.1, >= 3.1.6)
   yard
 
 BUNDLED WITH
