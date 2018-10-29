@@ -49,7 +49,6 @@ gem "bootstrap-sass", "3.3.3"
 gem "font-awesome-sass", "~> 4.5.0"
 
 group :development do
-  gem "haml-rails", "~> 1.0"
   gem "spring"
   gem "spring-commands-cucumber"
   gem "yard"
@@ -62,6 +61,7 @@ group :development do
 end
 
 group :development, :test do
+  gem "haml-rails", "~> 1.0"
   gem 'pry'
   gem "rubocop", ">= 0.47", require: false
 end
