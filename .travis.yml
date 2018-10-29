@@ -6,9 +6,7 @@ services:
   - postgresql
 
 rvm:
-  - 2.0
-  - 2.1
-  - 2.2
+  - 2.5.3
 
 addons:
   firefox: 45.8.0esr
